@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,13 +7,14 @@
     <Version>1.0.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
+	<Nullable>enable</Nullable>
     <RestoreAdditionalProjectSources>
       https://api.nuget.org/v3/index.json;
       https://nuget.bepinex.dev/v3/index.json;
       https://nuget.samboy.dev/v3/index.json
     </RestoreAdditionalProjectSources>
     <RootNamespace>PathOfIdleTweaks</RootNamespace>
-    <PathOfIdleGameDir Condition="'$(PathOfIdleGameDir)' == ''">D:\app\Steam\steamapps\common\PathOfIdle</PathOfIdleGameDir>
+    <PathOfIdleGameDir Condition="'$(PathOfIdleGameDir)' == ''">F:\SteamLibrary\steamapps\common\PathOfIdle</PathOfIdleGameDir>
   </PropertyGroup>
 
   <ItemGroup>
